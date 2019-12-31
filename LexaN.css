@@ -1,0 +1,456 @@
+/* ================================= Buttons ================================= */
+:root {
+    --basic-col: darkslategrey;
+    --blue-col: #0f52ba;
+    --red-col: #960019;
+    --green-col: #0b6623;
+}
+/* BASIC */
+.btn-basic {
+    outline:none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+
+    color: white;
+    background-color: var(--basic-col);
+    border: none;
+    transition: border-radius .5s;
+}
+.btn-basic:hover {
+    border-radius: 0;
+    cursor: pointer;
+}
+.btn-basic-out {
+    outline:none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+
+    color: var(--basic-col);
+    background-color: transparent;
+    border: 1px solid var(--basic-col);
+    transition: border-radius .5s;
+}
+.btn-basic-out:hover {
+    border-radius: 0;
+    cursor: pointer;
+}
+
+/* BLUE */
+.btn-blue {
+    outline:none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+
+    color: white;
+    background-color: var(--blue-col);
+    border: none;
+    transition: border-radius .5s;
+}
+.btn-blue:hover {
+    border-radius: 0;
+    cursor: pointer;
+}
+.btn-blue-out {
+    outline:none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+
+    color: var(--blue-col);
+    background-color: transparent;
+    border: 1px solid var(--blue-col);
+    transition: border-radius .5s;
+}
+.btn-blue-out:hover {
+    border-radius: 0;
+    cursor: pointer;
+}
+
+/* RED */
+.btn-red {
+    outline:none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+
+    color: white;
+    background-color: var(--red-col);
+    border: none;
+    transition: border-radius .5s;
+}
+.btn-red:hover {
+    border-radius: 0;
+    cursor: pointer;
+}
+.btn-red-out {
+    outline:none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+
+    color: var(--red-col);
+    background-color: transparent;
+    border: 1px solid var(--red-col);
+    transition: border-radius .5s;
+}
+.btn-red-out:hover {
+    border-radius: 0;
+    cursor: pointer;
+}
+
+/* GREEN */
+.btn-green {
+    outline:none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+
+    color: white;
+    background-color: var(--green-col);
+    border: none;
+    transition: border-radius .5s;
+}
+.btn-green:hover {
+    border-radius: 0;
+    cursor: pointer;
+}
+.btn-green-out {
+    outline:none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+
+    color: var(--green-col);
+    background-color: transparent;
+    border: 1px solid var(--green-col);
+    transition: border-radius .5s;
+}
+.btn-green-out:hover {
+    border-radius: 0;
+    cursor: pointer;
+}
+/* ================================= Input Fields ================================= */
+/* BASIC */
+.input-f-basic {
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: border-radius .5s;
+
+    background-color: var(--basic-col);
+    border: none;
+    color: white;
+}
+.input-f-basic:hover, .input-f-basic:focus {
+    border-radius: 0;
+}
+.input-f-basic-out {
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: border-radius .5s;
+
+    background-color: white;
+    border: 1px solid var(--basic-col);
+    color: var(--basic-col);
+}
+.input-f-basic::placeholder {
+    color: #c7c6c1;
+}
+.input-f-basic-out:hover, .input-f-basic-out:focus {
+    border-radius: 0;
+}
+/* BLUE */
+.input-f-blue {
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: border-radius .5s;
+
+    background-color: var(--blue-col);
+    border: none;
+    color: white;
+}
+.input-f-blue:hover, .input-f-blue:focus {
+    border-radius: 0;
+}
+.input-f-blue-out {
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: border-radius .5s;
+
+    background-color: white;
+    border: 1px solid var(--blue-col);
+    color: var(--blue-col);
+}
+.input-f-blue::placeholder {
+    color: #c7c6c1;
+}
+.input-f-blue-out:hover, .input-f-blue-out:focus {
+    border-radius: 0;
+}
+/* red */
+.input-f-red {
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: border-radius .5s;
+
+    background-color: var(--red-col);
+    border: none;
+    color: white;
+}
+.input-f-red:hover, .input-f-red:focus {
+    border-radius: 0;
+}
+.input-f-red-out {
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: border-radius .5s;
+
+    background-color: white;
+    border: 1px solid var(--red-col);
+    color: var(--red-col);
+}
+.input-f-red::placeholder {
+    color: #c7c6c1;
+}
+.input-f-red-out:hover, .input-f-red-out:focus {
+    border-radius: 0;
+}
+/* green */
+.input-f-green {
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: border-radius .5s;
+
+    background-color: var(--green-col);
+    border: none;
+    color: white;
+}
+.input-f-green:hover, .input-f-green:focus {
+    border-radius: 0;
+}
+.input-f-green-out {
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: border-radius .5s;
+
+    background-color: white;
+    border: 1px solid var(--green-col);
+    color: var(--green-col);
+}
+.input-f-green::placeholder {
+    color: #c7c6c1;
+}
+.input-f-green-out:hover, .input-f-green-out:focus {
+    border-radius: 0;
+}
+/* ================================= Selects ================================= */
+.select-basic {
+    position: relative;
+    margin: 0 !important;
+}
+.select-basic select {
+    display: none; /*hide original SELECT element:*/
+}
+/*style the arrow inside the select element:*/
+.select-selected:after { 
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: white transparent transparent transparent;
+}
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent white transparent;
+    top: 7px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 10px;
+    transition: border-radius .5s;
+}
+.select-items div:hover,.select-selected:hover {
+    border-radius: 0px;
+}
+.select-items {
+    border-radius: 0px;
+    transition: border-radius .5s;
+}
+.select-items:hover {
+    border-radius: 10px;
+}
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.select-basic .select-items {
+    background-color: var(--basic-col);
+}
+.select-basic .select-selected {
+    background-color: var(--basic-col);
+}
+.select-blue .select-items {
+    background-color: var(--blue-col) !important;
+}
+.select-blue .select-selected {
+    background-color: var(--blue-col) !important;
+}
+.select-red .select-items {
+    background-color: var(--red-col) !important;
+}
+.select-red .select-selected {
+    background-color: var(--red-col) !important;
+}
+.select-green .select-items {
+    background-color: var(--green-col) !important;
+}
+.select-green .select-selected {
+    background-color: var(--green-col) !important;
+}
+/* ================================= Tables ================================= */
+/* BASIC */
+.table-basic {
+    border-collapse: collapse;
+}
+.table-basic tr:not(:first-child) {
+    border-bottom: 1px solid black;
+}
+.table-basic td {
+    padding: 10px 25px;
+}
+.table-basic td:nth-child(even){background-color: rgba(233, 233, 233, 0.3);}
+.table-basic td:nth-child(odd){background-color: transparent;}
+.table-basic tr:hover td {color: var(--basic-col) !important;}
+.table-basic th {
+    padding: 10px 25px;
+    text-align: center;
+    background-color: var(--basic-col);
+    color: white;
+    transition: border-radius .5s;
+}
+.table-basic th:first-child {
+    border-radius: 10px 0 0 10px;
+}
+.table-basic th:last-child {
+    border-radius: 0 10px 10px 0;
+}
+.table-basic:hover th {
+    border-radius: 0;
+}
+/* BLUE */
+.table-blue th {
+    background-color: var(--blue-col) !important;
+}
+.table-blue tr:hover td {color: var(--blue-col) !important;}
+/* RED */
+.table-red th {
+    background-color: var(--red-col) !important;
+}
+.table-red tr:hover td {color: var(--red-col) !important;}
+/* GREEN */
+.table-green th {
+    background-color: var(--green-col) !important;
+}
+.table-green tr:hover td {color: var(--green-col) !important;}
+/* ================================= Checkboxes ================================= */
+/* BASIC */
+.c-box-basic {
+    /* display: block; */
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.c-box-basic input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+    transition: border-radius 0.5s;
+}
+/* On mouse-over, add a grey background color */
+.c-box-basic:hover input ~ .checkmark {
+    background-color: #ccc;
+    border-radius: 50%;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.c-box-basic input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.c-box-basic .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* When the checkbox is checked, add a blue background */
+.c-box-basic input:checked ~ .checkmark {
+    background-color: var(--basic-col);
+}
+.c-box-blue input:checked ~ .checkmark {
+    background-color: var(--blue-col);
+}
+.c-box-red input:checked ~ .checkmark {
+    background-color: var(--red-col);
+}
+.c-box-green input:checked ~ .checkmark {
+    background-color: var(--green-col);
+}
