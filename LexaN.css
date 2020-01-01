@@ -404,7 +404,7 @@
     width: 0;
 }
 /* Create a custom checkbox */
-.checkmark {
+.c-box-basic .checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -420,7 +420,7 @@
     border-radius: 50%;
 }
 /* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
+.c-box-basic .checkmark:after {
     content: "";
     position: absolute;
     display: none;
@@ -453,4 +453,202 @@
 }
 .c-box-green input:checked ~ .checkmark {
     background-color: var(--green-col);
+}
+/* ================================= Radio Buttons ================================= */
+ .r-btn-basic {
+    /* display: block; */
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default radio button */
+.r-btn-basic input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+/* Create a custom radio button */
+.r-btn-basic .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    transition: border-radius .5s;
+}
+/* On mouse-over, add a grey background color */
+.r-btn-basic:hover input ~ .checkmark {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.r-btn-basic .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.r-btn-basic input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the indicator (dot/circle) */
+.r-btn-basic .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    transition: border-radius .5s;
+}
+.r-btn-basic:hover .checkmark:after {
+    border-radius: 1px;
+}
+.r-btn-basic input:checked ~ .checkmark {
+    background-color: var(--basic-col);
+}
+.r-btn-blue input:checked ~ .checkmark {
+    background-color: var(--blue-col);
+}
+.r-btn-red input:checked ~ .checkmark {
+    background-color: var(--red-col);
+}
+.r-btn-green input:checked ~ .checkmark {
+    background-color: var(--green-col);
+}
+/* ================================= Labels ================================= */
+.lbl-basic {
+    padding: 10px 25px;
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    border-top: 1px solid var(--basic-col);
+    border-bottom: 1px solid var(--basic-col);
+    color: var(--basic-col);
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-radius: 0;
+    transition: border-color .5s, border-radius .5s;
+}
+.lbl-basic:hover {
+    border-left: 1px solid var(--basic-col);
+    border-radius: 10px 0 0 10px;
+}
+.lbl-blue {
+    border-top: 1px solid var(--blue-col);
+    border-bottom: 1px solid var(--blue-col);
+    color: var(--blue-col);
+}
+.lbl-blue:hover {
+    border-left: 1px solid var(--blue-col);
+}
+.lbl-red {
+    border-top: 1px solid var(--red-col);
+    border-bottom: 1px solid var(--red-col);
+    color: var(--red-col);
+}
+.lbl-red:hover {
+    border-left: 1px solid var(--red-col);
+}
+.lbl-green {
+    border-top: 1px solid var(--green-col);
+    border-bottom: 1px solid var(--green-col);
+    color: var(--green-col);
+}
+.lbl-green:hover {
+    border-left: 1px solid var(--green-col);
+}
+.lbl-basic-invert {
+    padding: 10px 25px;
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    border-top: 1px solid var(--basic-col);
+    border-bottom: 1px solid var(--basic-col);
+    border-left: 1px solid var(--basic-col);
+    color: var(--basic-col);
+    border-right: 1px solid transparent;
+    border-radius: 10px 0 0 10px;
+    transition: border-color .5s, border-radius .5s;
+}
+.lbl-basic-invert:hover {
+    border-left: 1px solid transparent;
+    border-radius: 0;
+}
+.lbl-blue-invert {
+    border-top: 1px solid var(--blue-col);
+    border-bottom: 1px solid var(--blue-col);
+    border-left: 1px solid var(--blue-col);
+    color: var(--blue-col);
+    border-radius: 10px 0 0 10px;
+}
+.lbl-blue-invert:hover {
+    border-left: 1px solid transparent;
+    border-radius: 0;
+}
+.lbl-red-invert {
+    border-top: 1px solid var(--red-col);
+    border-bottom: 1px solid var(--red-col);
+    border-left: 1px solid var(--red-col);
+    color: var(--red-col);
+    border-radius: 10px 0 0 10px;
+}
+.lbl-red-invert:hover {
+    border-left: 1px solid transparent;
+    border-radius: 0;
+}
+.lbl-green-invert {
+    border-top: 1px solid var(--green-col);
+    border-bottom: 1px solid var(--green-col);
+    border-left: 1px solid var(--green-col);
+    color: var(--green-col);
+    border-radius: 10px 0 0 10px;
+}
+.lbl-green-invert:hover {
+    border-left: 1px solid transparent;
+    border-radius: 0;
+}
+/* ================================= ... ================================= */
+
+
+
+
+
+
+
+
+/* ================================= Others ================================= */
+.bg-color-basic {
+    background-color: var(--basic-col);
+    color: white;
+}
+.txt-color-basic {
+    color: var(--basic-col);
+}
+.bg-color-blue {
+    background-color: var(--blue-col);
+    color: white;
+}
+.txt-color-blue {
+    color: var(--blue-col);
+}
+.bg-color-red {
+    background-color: var(--red-col);
+    color: white;
+}
+.txt-color-red {
+    color: var(--red-col);
+}
+.bg-color-green {
+    background-color: var(--green-col);
+    color: white;
+}
+.txt-color-green {
+    color: var(--green-col);
 }

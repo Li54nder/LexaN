@@ -13,8 +13,11 @@
 <body>
     <center>
             <h1>Welcome to CSS styling LexaN</h1>
+            <a href="LexaN.css" download="LexaN"><button class="btn-basic-out">Download CSS</button></a>
+            <a href="LexaN.js" download="LexaN"><button class="btn-basic-out">Download JS</button></a>
     </center>
-    <p>LexaN is an open source toolkit witch gonna help you to build your web app or web site with HTML and CSS. Build your app to look nice very easy without Bootstrap or jQuery. LexaN was developing by <a href="https://www.github.com/Li54nder">@Li54nder</a> since 2019. </p>
+    <p>LexaN is an open source toolkit witch gonna help you to build your web app or web site with HTML and CSS. Build your app to look nice very easy without Bootstrap or jQuery. LexaN was developing by <a href="https://www.github.com/Li54nder" target="blank">@Li54nder</a> since 2019.</p>
+    
 <h2>Linking LexaN with your web page</h2>
 <br>
 <span>This code type in head tag of HTML document: </span>
@@ -30,8 +33,8 @@
 &lt;script src=&quot;LexaN.js&quot;&gt;&lt;/script&gt;
 </pre>
 </div>
-
-    <div class="box">
+<br><br><p>Styling: <a href="#Button">Buttons</a>, <a href="#InputF">Input Fields</a>, <a href="#Select">Selects</a>, <a href="#Table">Tables</a>, <a href="#Checkbox">Checkboxes</a>, <a href="#RadioBtn">Radio Buttons</a>, <a href="#Label">Labels</a>...</p>
+    <div class="box" id="Button">
         <center>
                 <h2>Buttons</h2>
                 <button class="btn-basic">Button</button>
@@ -64,7 +67,7 @@
         </center>
     </div>
 
-    <div class="box">
+    <div class="box" id="InputF">
         <center>
                 <h2>Input Fields</h2>
                 <input type="text" class="input-f-basic" placeholder="PlaceHolder">
@@ -97,7 +100,7 @@
         </center>
     </div>
 
-    <div class="box">
+    <div class="box" id="Select">
         <center>
                 <h2>Selects</h2>
                 <div class="select-basic" style="width: 250px;">
@@ -158,7 +161,7 @@
         </center>
     </div>
 
-    <div class="box">
+    <div class="box" id="Table">
         <center>
             <h2>Tables</h2>
             <table class="table-basic">
@@ -269,7 +272,7 @@
         </center>
     </div>
 
-    <div class="box">
+    <div class="box" id="Checkbox">
         <center>
             <h2>Checkboxes</h2>
             <label class="c-box-basic">One
@@ -309,15 +312,64 @@
         </center>
     </div>
 
-    <div class="box">
+    <div class="box" id="RadioBtn">
         <center>
-            <h2>...</h2>
+            <h2>Radio Buttons</h2>
+            <label class="r-btn-basic">One
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="r-btn-basic r-btn-blue">Two
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="r-btn-basic r-btn-red">Three
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="r-btn-basic r-btn-green">Four
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+<h3>HTML Code</h3>
+<br><div class="code">
+<pre>
+&lt;label class=&quot;r-btn-basic&quot;&gt;One
+    &lt;input type=&quot;radio&quot; checked=&quot;checked&quot; name=&quot;radio&quot;&gt;
+    &lt;span class=&quot;checkmark&quot;&gt;&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;r-btn-basic r-btn-blue&quot;&gt;Two
+    ...
+&lt;/label&gt;
+&lt;label class=&quot;r-btn-basic r-btn-red&quot;&gt;Three
+    ...
+&lt;/label&gt;
+&lt;label class=&quot;r-btn-basic r-btn-green&quot;&gt;Four
+    ...
+&lt;/label&gt;
+</pre>
+</div>
+        </center>
+    </div>
+
+    <div class="box" id="Label">
+        <center>
+            <h2>Labels</h2>
+            <label class="lbl-basic">Label 1 - type 1</label><br>
+            <label class="lbl-basic lbl-blue">Label 2 - type 1</label><br>
+            <label class="lbl-basic lbl-red-invert">Label 1 - type 2</label><br>
+            <label class="lbl-basic lbl-green-invert">Label 2 - type 2</label>
 
 <h3>HTML Code</h3>
 <br><div class="code">
 <pre>
-
-</pre>
+&lt;label class=&quot;lbl-basic&quot;&gt;Label 1 - type 1&lt;/label&gt;
+&lt;br&gt;
+&lt;label class=&quot;lbl-basic lbl-blue&quot;&gt;Label 2 - type 1&lt;/label&gt;
+&lt;br&gt;
+&lt;label class=&quot;lbl-basic lbl-red-invert&quot;&gt;Label 1 - type 2&lt;/label&gt;
+&lt;br&gt;
+&lt;label class=&quot;lbl-basic lbl-green-invert&quot;&gt;Label 2 - type 2&lt;/label&gt;
 </div>
         </center>
     </div>
@@ -350,28 +402,12 @@
 
     <div class="box">
         <center>
-            <h2>...</h2>
+            <h2>Other useful staff</h2>
 
-<h3>HTML Code</h3>
-<br><div class="code">
-<pre>
-
-</pre>
-</div>
-        </center>
-    </div>
-
-    <div class="box">
-        <center>
-            <h2>...</h2>
-
-<h3>HTML Code</h3>
-<br><div class="code">
-<pre>
-
-</pre>
-</div>
-        </center>
+            <p>You can use class <span class="bg-color-blue">".bg-color-blue"</span> to paint background of any object in blue color or any of tree other colors we used in LexaN.</p>
+            <p>Also, you can use class <span class="txt-color-blue">".txt-color-blue"</span> to paint text in appropriate color.</p>
+            <p>Font used on this page is "Raleway"</p>    
+        <br></center>
     </div>
 
     <script src="LexaN.js"></script>
