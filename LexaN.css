@@ -614,16 +614,125 @@
     border-left: 1px solid transparent;
     border-radius: 0;
 }
-/* ================================= ... ================================= */
+/* ================================= Header & Footer ================================= */
 
 
 
 
+/* ================================= Cards ================================= */
+.card-basic {
+    margin: 20px;
+    display: inline-block;
+    color: white;
+    background-color: var(--basic-col);
+    border-radius: 10px;
+    height: auto;
+    width: 250px;
+    padding: 33px;
+    transition: border-radius 0.5s;
 
+    -webkit-box-shadow: 0px 5px 23px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 23px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 23px -5px rgba(0,0,0,0.75);
+}
+.card-basic:hover {
+    border-radius: 0;
+}
+.card-basic:hover div {
+    border-radius: 0;
+}
+.card-basic img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.card-basic h2 {
+    margin: 10px 0 !important;
+    text-transform: uppercase;
+}
+.card-basic div {
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: border-radius 0.5s;
+    padding: 15px;
+}
+.card-basic div p {
+    text-align: justify;
+}
+.card-blue {
+    background-color: var(--blue-col);
+}
+.card-red {
+    background-color: var(--red-col);
+}
+.card-green {
+    background-color: var(--green-col);
+}
+/* OUTLINE */
+.card-basic-out {
+    margin: 20px;
+    display: inline-block;
+    border: 1px solid var(--basic-col);
+    color: var(--basic-col);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    height: auto;
+    width: 250px;
+    padding: 33px;
+    transition: border-radius 0.5s;
 
+    -webkit-box-shadow: 0px 5px 23px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 23px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 23px -5px rgba(0,0,0,0.75);
+}
+.card-basic-out:hover {
+    border-radius: 0;
+}
+.card-basic-out:hover div {
+    border-radius: 0;
+}
+.card-basic-out img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 
+}
+.card-basic-out h2 {
+    margin: 10px 0 !important;
+    text-transform: uppercase;
+}
+.card-basic-out div {
+    border: 1px solid var(--basic-col);
+    border-radius: 10px;
+    transition: border-radius 0.5s;
+    padding: 15px;
+}
+.card-basic-out div p {
+    text-align: justify;
+}
+.card-blue-out {
+    border: 1px solid var(--blue-col);
+    color: var(--blue-col);
+}
+.card-blue-out div {
+    border: 1px solid var(--blue-col);
+}
+.card-red-out {
+    border: 1px solid var(--red-col);
+    color: var(--red-col);
+}
+.card-red-out div {
+    border: 1px solid var(--red-col);
+}
+.card-green-out {
+    border: 1px solid var(--green-col);
+    color: var(--green-col);
+}
+.card-green-out div {
+    border: 1px solid var(--green-col);
+}
 
-/* ================================= Others ================================= */
+/* ================================= Other ================================= */
 .bg-color-basic {
     background-color: var(--basic-col);
     color: white;
