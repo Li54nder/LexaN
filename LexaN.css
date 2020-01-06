@@ -1,10 +1,13 @@
-/* ================================= Buttons ================================= */
 :root {
     --basic-col: darkslategrey;
     --blue-col: #0f52ba;
     --red-col: #960019;
     --green-col: #0b6623;
 }
+html, body {
+    margin: 0;
+}
+/* ================================= Buttons ================================= */
 /* BASIC */
 .btn-basic {
     outline:none;
@@ -17,7 +20,7 @@
     border: none;
     transition: border-radius .5s;
 }
-.btn-basic:hover {
+.btn-basic:hover, .btn-basic:focus {
     border-radius: 0;
     cursor: pointer;
 }
@@ -32,7 +35,7 @@
     border: 1px solid var(--basic-col);
     transition: border-radius .5s;
 }
-.btn-basic-out:hover {
+.btn-basic-out:hover, .btn-basic-out:focus {
     border-radius: 0;
     cursor: pointer;
 }
@@ -49,7 +52,7 @@
     border: none;
     transition: border-radius .5s;
 }
-.btn-blue:hover {
+.btn-blue:hover, .btn-blue:focus {
     border-radius: 0;
     cursor: pointer;
 }
@@ -64,7 +67,7 @@
     border: 1px solid var(--blue-col);
     transition: border-radius .5s;
 }
-.btn-blue-out:hover {
+.btn-blue-out:hover, .btn-blue-out:focus{
     border-radius: 0;
     cursor: pointer;
 }
@@ -81,7 +84,7 @@
     border: none;
     transition: border-radius .5s;
 }
-.btn-red:hover {
+.btn-red:hover, .btn-red:focus {
     border-radius: 0;
     cursor: pointer;
 }
@@ -96,7 +99,7 @@
     border: 1px solid var(--red-col);
     transition: border-radius .5s;
 }
-.btn-red-out:hover {
+.btn-red-out:hover, .btn-red-out:focus {
     border-radius: 0;
     cursor: pointer;
 }
@@ -113,7 +116,7 @@
     border: none;
     transition: border-radius .5s;
 }
-.btn-green:hover {
+.btn-green:hover, .btn-green:focus {
     border-radius: 0;
     cursor: pointer;
 }
@@ -128,7 +131,7 @@
     border: 1px solid var(--green-col);
     transition: border-radius .5s;
 }
-.btn-green-out:hover {
+.btn-green-out:hover, .btn-green-out:focus {
     border-radius: 0;
     cursor: pointer;
 }
@@ -153,7 +156,7 @@
     padding: 10px 25px;
     transition: border-radius .5s;
 
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid var(--basic-col);
     color: var(--basic-col);
 }
@@ -165,93 +168,27 @@
 }
 /* BLUE */
 .input-f-blue {
-    outline: none;
-    border-radius: 10px;
-    padding: 10px 25px;
-    transition: border-radius .5s;
-
     background-color: var(--blue-col);
-    border: none;
-    color: white;
-}
-.input-f-blue:hover, .input-f-blue:focus {
-    border-radius: 0;
 }
 .input-f-blue-out {
-    outline: none;
-    border-radius: 10px;
-    padding: 10px 25px;
-    transition: border-radius .5s;
-
-    background-color: white;
     border: 1px solid var(--blue-col);
     color: var(--blue-col);
 }
-.input-f-blue::placeholder {
-    color: #c7c6c1;
-}
-.input-f-blue-out:hover, .input-f-blue-out:focus {
-    border-radius: 0;
-}
 /* red */
 .input-f-red {
-    outline: none;
-    border-radius: 10px;
-    padding: 10px 25px;
-    transition: border-radius .5s;
-
     background-color: var(--red-col);
-    border: none;
-    color: white;
-}
-.input-f-red:hover, .input-f-red:focus {
-    border-radius: 0;
 }
 .input-f-red-out {
-    outline: none;
-    border-radius: 10px;
-    padding: 10px 25px;
-    transition: border-radius .5s;
-
-    background-color: white;
     border: 1px solid var(--red-col);
     color: var(--red-col);
 }
-.input-f-red::placeholder {
-    color: #c7c6c1;
-}
-.input-f-red-out:hover, .input-f-red-out:focus {
-    border-radius: 0;
-}
 /* green */
 .input-f-green {
-    outline: none;
-    border-radius: 10px;
-    padding: 10px 25px;
-    transition: border-radius .5s;
-
     background-color: var(--green-col);
-    border: none;
-    color: white;
-}
-.input-f-green:hover, .input-f-green:focus {
-    border-radius: 0;
 }
 .input-f-green-out {
-    outline: none;
-    border-radius: 10px;
-    padding: 10px 25px;
-    transition: border-radius .5s;
-
-    background-color: white;
     border: 1px solid var(--green-col);
     color: var(--green-col);
-}
-.input-f-green::placeholder {
-    color: #c7c6c1;
-}
-.input-f-green-out:hover, .input-f-green-out:focus {
-    border-radius: 0;
 }
 /* ================================= Selects ================================= */
 .select-basic {
@@ -277,7 +214,7 @@
     top: 7px;
 }
 /*style the items (options), including the selected item:*/
-.select-items div,.select-selected {
+.select-items div, .select-selected {
     color: white;
     padding: 8px 16px;
     border: 1px solid transparent;
@@ -287,7 +224,7 @@
     border-radius: 10px;
     transition: border-radius .5s;
 }
-.select-items div:hover,.select-selected:hover {
+.select-items div:hover, .select-selected:hover {
     border-radius: 0px;
 }
 .select-items {
@@ -614,11 +551,6 @@
     border-left: 1px solid transparent;
     border-radius: 0;
 }
-/* ================================= Header & Footer ================================= */
-
-
-
-
 /* ================================= Cards ================================= */
 .card-basic {
     margin: 20px;
@@ -674,7 +606,7 @@
     display: inline-block;
     border: 1px solid var(--basic-col);
     color: var(--basic-col);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     height: auto;
     width: 250px;
@@ -731,6 +663,73 @@
 .card-green-out div {
     border: 1px solid var(--green-col);
 }
+/* ================================= Input DATE ================================= */
+[type="date"].input-d-basic {
+    background: var(--basic-col) url(https://cdn4.iconfinder.com/data/icons/small-n-flat/24/calendar-20.png)  95% 50% no-repeat ;
+}
+[type="date"].input-d-basic::-webkit-inner-spin-button {
+    display: none;
+}
+[type="date"].input-d-basic::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+.input-d-basic {
+    /* border: 1px solid #c4c4c4; */
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 9px 10px 9px 25px;
+    width: 180px;
+    outline:none;
+    transition: border-radius .5s;
+}
+.input-d-basic:hover, .input-d-basic:focus {
+    border-radius: 0;
+}
+}
+[type="date"].input-d-blue {
+    background: var(--blue-col) url(https://cdn4.iconfinder.com/data/icons/small-n-flat/24/calendar-20.png)  95% 50% no-repeat ;
+}
+[type="date"].input-d-red {
+    background: var(--red-col) url(https://cdn4.iconfinder.com/data/icons/small-n-flat/24/calendar-20.png)  95% 50% no-repeat ;
+}
+[type="date"].input-d-green {
+    background: var(--green-col) url(https://cdn4.iconfinder.com/data/icons/small-n-flat/24/calendar-20.png)  95% 50% no-repeat ;
+}
+/* OUT */
+[type="date"].input-d-basic-out {
+    background: rgba(255, 255, 255, 0.8) url(https://cdn4.iconfinder.com/data/icons/small-n-flat/24/calendar-20.png)  95% 50% no-repeat ;
+}
+[type="date"].input-d-basic-out::-webkit-inner-spin-button {
+    display: none;
+}
+[type="date"].input-d-basic-out::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+.input-d-basic-out {
+    border: 1px solid var(--basic-col);
+    color: var(--basic-col);
+    border-radius: 10px;
+    padding: 9px 10px 9px 25px;
+    width: 180px;
+    outline:none;
+    transition: border-radius .5s;
+}
+.input-d-basic-out:hover, .input-d-basic-out:focus {
+    border-radius: 0;
+}
+.input-d-blue-out {
+    border: 1px solid var(--blue-col);
+    color: var(--blue-col);
+}
+.input-d-red-out {
+    border: 1px solid var(--red-col);
+    color: var(--red-col);
+}
+.input-d-green-out {
+    border: 1px solid var(--green-col);
+    color: var(--green-col);
+}
 
 /* ================================= Other ================================= */
 .bg-color-basic {
@@ -760,4 +759,39 @@
 }
 .txt-color-green {
     color: var(--green-col);
+}
+/* ================================= Header & Footer ================================= */
+.header-basic-out {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid var(--basic-col);
+    color: var(--basic-col);
+    background-color: rgba(255, 255, 255, 0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+.header-basic-out a {
+    color: var(--basic-col);
+    text-decoration: none;
+}
+.footer-basic-out {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid var(--basic-col);
+    color: var(--basic-col);
+    background-color: rgba(255, 255, 255, 0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-basic-out a {
+    color: var(--basic-col);
 }

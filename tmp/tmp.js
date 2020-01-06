@@ -5,3 +5,5 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             x.innerHTML = "Code is not available on mobile devices!";
     });
 }
+
+// ==================================== Feader & Footer ==========================================
